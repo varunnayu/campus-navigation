@@ -263,406 +263,556 @@ const baseConnections = [
 
 // Dedicated Ground Floor Locations (calibrated to the new landscape image)
 const groundLocations: Location[] = [
-  // Left Wing (vertical)
-  { id: "f0-boys-washroom", name: "Ground Floor - Boys Washroom", type: "facility", x: 6, y: 23, floor: 0 },
-  { id: "f0-lh-13", name: "Ground Floor - LH-13", type: "classroom", x: 6, y: 37, floor: 0 },
-  { id: "f0-lh-14", name: "Ground Floor - LH-14", type: "classroom", x: 6, y: 51, floor: 0 },
-  { id: "f0-staff-room", name: "Ground Floor - Staff Room", type: "facility", x: 6, y: 65, floor: 0 },
+  // Left Wing (vertical stack)
+  { id: "f0-boys-washroom", name: "Ground Floor - Boys Washroom", type: "facility", x: 7, y: 12, floor: 0 },
+  { id: "f0-lh-3", name: "Ground Floor - LH-3", type: "classroom", x: 7, y: 25, floor: 0 },
+  { id: "f0-lh-4", name: "Ground Floor - LH-4", type: "classroom", x: 7, y: 37, floor: 0 },
+  { id: "f0-lh-5", name: "Ground Floor - LH-5", type: "classroom", x: 7, y: 49, floor: 0 },
+  { id: "f0-staff-room", name: "Ground Floor - Principal Staff room and accounts", type: "facility", x: 7, y: 80, floor: 0 },
 
-  // Center top rooms
-  { id: "f0-lh-15", name: "Ground Floor - LH-15", type: "classroom", x: 16, y: 51, floor: 0 },
-  { id: "f0-lh-16", name: "Ground Floor - LH-16", type: "classroom", x: 26, y: 51, floor: 0 },
-  { id: "f0-computer-lab-1", name: "Ground Floor - Computer Lab 1", type: "lab", x: 36, y: 51, floor: 0 },
-  { id: "f0-stairs", name: "Ground Floor - Staircase (Left)", type: "stairs", x: 45, y: 51, floor: 0 },
-  { id: "f0-central-stairs", name: "Ground Floor - Central Stairs/Structure", type: "facility", x: 50, y: 51, floor: 0 },
-  { id: "f0-lift", name: "Ground Floor - Lift", type: "lift", x: 54, y: 51, floor: 0 },
-  { id: "f0-stairs-right", name: "Ground Floor - Staircase (Right)", type: "stairs", x: 58, y: 51, floor: 0 },
-  { id: "f0-lh-17", name: "Ground Floor - LH-17", type: "classroom", x: 65, y: 51, floor: 0 },
-  { id: "f0-lh-18", name: "Ground Floor - LH-18", type: "classroom", x: 75, y: 51, floor: 0 },
-  { id: "f0-lh-19", name: "Ground Floor - LH-19", type: "classroom", x: 84, y: 51, floor: 0 },
+  // Center top rooms (above main corridor)
+  { id: "f0-lh-7", name: "Ground Floor - LH-7", type: "classroom", x: 18, y: 49, floor: 0 },
+  { id: "f0-lh-8", name: "Ground Floor - LH-8", type: "classroom", x: 24, y: 49, floor: 0 },
+  { id: "f0-lh-9", name: "Ground Floor - LH-9", type: "classroom", x: 30, y: 49, floor: 0 },
+  { id: "f0-electrical-room", name: "Ground Floor - Electrical Room", type: "facility", x: 35, y: 49, floor: 0 },
+  { id: "f0-stairs", name: "Ground Floor - Staircase (Left)", type: "stairs", x: 38, y: 49, floor: 0 },
+  { id: "f0-lift", name: "Ground Floor - Lift (Left)", type: "lift", x: 41, y: 49, floor: 0 },
+  { id: "f0-clp-cn-lab", name: "Ground Floor - CLP/CN Lab = I-1", type: "lab", x: 45, y: 49, floor: 0 },
+  { id: "f0-dbms-fs-lab", name: "Ground Floor - DBMS/FS Lab = I-5", type: "lab", x: 51, y: 49, floor: 0 },
+  { id: "f0-ups-room", name: "Ground Floor - UPS Room 16", type: "facility", x: 56, y: 49, floor: 0 },
+  { id: "f0-lift-2", name: "Ground Floor - Lift (Right)", type: "lift", x: 60, y: 49, floor: 0 },
+  { id: "f0-stairs-2", name: "Ground Floor - Staircase (Right)", type: "stairs", x: 64, y: 49, floor: 0 },
+  { id: "f0-lh-17", name: "Ground Floor - LH-17", type: "classroom", x: 70, y: 49, floor: 0 },
+  { id: "f0-lh-18", name: "Ground Floor - LH-18", type: "classroom", x: 76, y: 49, floor: 0 },
+  { id: "f0-lh-19", name: "Ground Floor - LH-19", type: "classroom", x: 82, y: 49, floor: 0 },
 
   // Center bottom room
-  { id: "f0-computer-lab-2", name: "Ground Floor - Computer Lab - 2", type: "lab", x: 26, y: 78, floor: 0 },
+  { id: "f0-computer-lab-2", name: "Ground Floor - Computer Lab-2", type: "lab", x: 48, y: 74, floor: 0 },
 
-  // Right Wing (vertical)
-  { id: "f0-physics-lab", name: "Ground Floor - Physics Lab", type: "lab", x: 94, y: 23, floor: 0 },
-  { id: "f0-lh-20", name: "Ground Floor - LH-20", type: "classroom", x: 94, y: 37, floor: 0 },
-  { id: "f0-girls-restroom", name: "Ground Floor - Girls Rest Room", type: "facility", x: 94, y: 51, floor: 0 },
-  { id: "f0-chemistry-lab", name: "Ground Floor - Chemistry Lab", type: "lab", x: 94, y: 65, floor: 0 },
+  // Right Wing (vertical stack)
+  { id: "f0-physics-lab", name: "Ground Floor - Physics Lab", type: "lab", x: 93, y: 15, floor: 0 },
+  { id: "f0-lh-20", name: "Ground Floor - LH-20", type: "classroom", x: 93, y: 33, floor: 0 },
+  { id: "f0-girls-washroom", name: "Ground Floor - GIRLS Washroom", type: "facility", x: 93, y: 49, floor: 0 },
+  { id: "f0-chemistry-lab", name: "Ground Floor - Chemistry Lab", type: "lab", x: 93, y: 80, floor: 0 },
 
-  // Corridor Waypoints - Horizontal
-  { id: "f0-c-left", name: "Ground Floor - Corridor Left End", type: "corridor", x: 11, y: 63, floor: 0 },
-  { id: "f0-c-lh15", name: "Ground Floor - Corridor near LH-15", type: "corridor", x: 16, y: 63, floor: 0 },
-  { id: "f0-c-lh16", name: "Ground Floor - Corridor near LH-16", type: "corridor", x: 26, y: 63, floor: 0 },
-  { id: "f0-c-complab1", name: "Ground Floor - Corridor near Computer Lab 1", type: "corridor", x: 36, y: 63, floor: 0 },
-  { id: "f0-c-stairs-left", name: "Ground Floor - Corridor near Left Stairs", type: "corridor", x: 45, y: 63, floor: 0 },
-  { id: "f0-c-center", name: "Ground Floor - Corridor Center", type: "corridor", x: 50, y: 63, floor: 0 },
-  { id: "f0-c-lift", name: "Ground Floor - Corridor near Lift", type: "corridor", x: 54, y: 63, floor: 0 },
-  { id: "f0-c-stairs-right", name: "Ground Floor - Corridor near Right Stairs", type: "corridor", x: 58, y: 63, floor: 0 },
-  { id: "f0-c-lh17", name: "Ground Floor - Corridor near LH-17", type: "corridor", x: 65, y: 63, floor: 0 },
-  { id: "f0-c-lh18", name: "Ground Floor - Corridor near LH-18", type: "corridor", x: 75, y: 63, floor: 0 },
-  { id: "f0-c-lh19", name: "Ground Floor - Corridor near LH-19", type: "corridor", x: 84, y: 63, floor: 0 },
-  { id: "f0-c-right", name: "Ground Floor - Corridor Right End", type: "corridor", x: 89, y: 63, floor: 0 },
+  // Corridor Waypoints - Main Horizontal Corridor at y = 62%
+  { id: "f0-c-left", name: "Ground Floor - Corridor Left End", type: "corridor", x: 12, y: 62, floor: 0 },
+  { id: "f0-c-lh7", name: "Ground Floor - Corridor near LH-7", type: "corridor", x: 18, y: 62, floor: 0 },
+  { id: "f0-c-lh8", name: "Ground Floor - Corridor near LH-8", type: "corridor", x: 24, y: 62, floor: 0 },
+  { id: "f0-c-lh9", name: "Ground Floor - Corridor near LH-9", type: "corridor", x: 30, y: 62, floor: 0 },
+  { id: "f0-c-electrical", name: "Ground Floor - Corridor near Electrical Room", type: "corridor", x: 35, y: 62, floor: 0 },
+  { id: "f0-c-stairs-left", name: "Ground Floor - Corridor near Left Stairs", type: "corridor", x: 38, y: 62, floor: 0 },
+  { id: "f0-c-lift-left", name: "Ground Floor - Corridor near Left Lift", type: "corridor", x: 41, y: 62, floor: 0 },
+  { id: "f0-c-clp-cn-lab", name: "Ground Floor - Corridor near CLP/CN Lab", type: "corridor", x: 45, y: 62, floor: 0 },
+  { id: "f0-c-dbms-fs-lab", name: "Ground Floor - Corridor near DBMS/FS Lab", type: "corridor", x: 51, y: 62, floor: 0 },
+  { id: "f0-c-ups-room", name: "Ground Floor - Corridor near UPS Room", type: "corridor", x: 56, y: 62, floor: 0 },
+  { id: "f0-c-lift-right", name: "Ground Floor - Corridor near Right Lift", type: "corridor", x: 60, y: 62, floor: 0 },
+  { id: "f0-c-stairs-right", name: "Ground Floor - Corridor near Right Stairs", type: "corridor", x: 64, y: 62, floor: 0 },
+  { id: "f0-c-lh17", name: "Ground Floor - Corridor near LH-17", type: "corridor", x: 70, y: 62, floor: 0 },
+  { id: "f0-c-lh18", name: "Ground Floor - Corridor near LH-18", type: "corridor", x: 76, y: 62, floor: 0 },
+  { id: "f0-c-lh19", name: "Ground Floor - Corridor near LH-19", type: "corridor", x: 82, y: 62, floor: 0 },
+  { id: "f0-c-right", name: "Ground Floor - Corridor Right End", type: "corridor", x: 88, y: 62, floor: 0 },
 
-  // Corridor Waypoints - Left Wing Vertical Stack
-  { id: "f0-c-left-vertical-bottom", name: "Ground Floor - Left Corridor bottom", type: "corridor", x: 11, y: 65, floor: 0 },
-  { id: "f0-c-left-vertical-lh14", name: "Ground Floor - Left Corridor near LH-14", type: "corridor", x: 11, y: 51, floor: 0 },
-  { id: "f0-c-left-vertical-lh13", name: "Ground Floor - Left Corridor near LH-13", type: "corridor", x: 11, y: 37, floor: 0 },
-  { id: "f0-c-left-vertical-washroom", name: "Ground Floor - Left Corridor near Boys Washroom", type: "corridor", x: 11, y: 23, floor: 0 },
+  // Corridor Waypoints - Left Wing Vertical Corridor Stack (runs along x = 12%)
+  { id: "f0-c-left-vertical-washroom", name: "Ground Floor - Left Corridor near Boys Washroom", type: "corridor", x: 12, y: 12, floor: 0 },
+  { id: "f0-c-left-vertical-lh3", name: "Ground Floor - Left Corridor near LH-3", type: "corridor", x: 12, y: 25, floor: 0 },
+  { id: "f0-c-left-vertical-lh4", name: "Ground Floor - Left Corridor near LH-4", type: "corridor", x: 12, y: 37, floor: 0 },
+  { id: "f0-c-left-vertical-lh5", name: "Ground Floor - Left Corridor near LH-5", type: "corridor", x: 12, y: 49, floor: 0 },
+  { id: "f0-c-left-vertical-bottom", name: "Ground Floor - Left Corridor near Staff Room", type: "corridor", x: 12, y: 80, floor: 0 },
 
-  // Corridor Waypoints - Right Wing Vertical Stack
-  { id: "f0-c-right-vertical-bottom", name: "Ground Floor - Right Corridor bottom", type: "corridor", x: 89, y: 65, floor: 0 },
-  { id: "f0-c-right-vertical-girls", name: "Ground Floor - Right Corridor near Girls Rest Room", type: "corridor", x: 89, y: 51, floor: 0 },
-  { id: "f0-c-right-vertical-lh20", name: "Ground Floor - Right Corridor near LH-20", type: "corridor", x: 89, y: 37, floor: 0 },
-  { id: "f0-c-right-vertical-physics", name: "Ground Floor - Right Corridor near Physics Lab", type: "corridor", x: 89, y: 23, floor: 0 },
+  // Corridor Waypoints - Right Wing Vertical Corridor Stack (runs along x = 88%)
+  { id: "f0-c-right-vertical-physics", name: "Ground Floor - Right Corridor near Physics Lab", type: "corridor", x: 88, y: 15, floor: 0 },
+  { id: "f0-c-right-vertical-lh20", name: "Ground Floor - Right Corridor near LH-20", type: "corridor", x: 88, y: 33, floor: 0 },
+  { id: "f0-c-right-vertical-girls", name: "Ground Floor - Right Corridor near Girls Washroom", type: "corridor", x: 88, y: 49, floor: 0 },
+  { id: "f0-c-right-vertical-bottom", name: "Ground Floor - Right Corridor near Chemistry Lab", type: "corridor", x: 88, y: 80, floor: 0 },
 ];
 
 const groundConnections: Connection[] = [
-  // Horizontal corridor segments
-  { from: "f0-c-left", to: "f0-c-lh15", distance: 4, direction: "Walk straight along the corridor" },
-  { from: "f0-c-lh15", to: "f0-c-lh16", distance: 8, direction: "Continue straight past LH-15" },
-  { from: "f0-c-lh16", to: "f0-c-complab1", distance: 8, direction: "Continue past LH-16" },
-  { from: "f0-c-complab1", to: "f0-c-stairs-left", distance: 7, direction: "Continue past Computer Lab 1" },
-  { from: "f0-c-stairs-left", to: "f0-c-center", distance: 4, direction: "Walk past the staircase" },
-  { from: "f0-c-center", to: "f0-c-lift", distance: 3, direction: "Continue past the central structure" },
-  { from: "f0-c-lift", to: "f0-c-stairs-right", distance: 3, direction: "Continue past the Lift" },
-  { from: "f0-c-stairs-right", to: "f0-c-lh17", distance: 6, direction: "Continue past the right staircase" },
-  { from: "f0-c-lh17", to: "f0-c-lh18", distance: 8, direction: "Continue past LH-17" },
-  { from: "f0-c-lh18", to: "f0-c-lh19", distance: 7, direction: "Continue past LH-18" },
+  // Main Horizontal Corridor segments (left to right)
+  { from: "f0-c-left", to: "f0-c-lh7", distance: 4, direction: "Walk straight along the corridor" },
+  { from: "f0-c-lh7", to: "f0-c-lh8", distance: 4, direction: "Continue straight past LH-7" },
+  { from: "f0-c-lh8", to: "f0-c-lh9", distance: 4, direction: "Continue past LH-8" },
+  { from: "f0-c-lh9", to: "f0-c-electrical", distance: 3, direction: "Continue past LH-9" },
+  { from: "f0-c-electrical", to: "f0-c-stairs-left", distance: 2, direction: "Continue past the Electrical Room" },
+  { from: "f0-c-stairs-left", to: "f0-c-lift-left", distance: 2, direction: "Walk past the Staircase" },
+  { from: "f0-c-lift-left", to: "f0-c-clp-cn-lab", distance: 3, direction: "Continue past the Lift" },
+  { from: "f0-c-clp-cn-lab", to: "f0-c-dbms-fs-lab", distance: 4, direction: "Continue past CLP/CN Lab" },
+  { from: "f0-c-dbms-fs-lab", to: "f0-c-ups-room", distance: 3, direction: "Continue past DBMS/FS Lab" },
+  { from: "f0-c-ups-room", to: "f0-c-lift-right", distance: 3, direction: "Continue past the UPS Room" },
+  { from: "f0-c-lift-right", to: "f0-c-stairs-right", distance: 2, direction: "Continue past the Lift" },
+  { from: "f0-c-stairs-right", to: "f0-c-lh17", distance: 4, direction: "Walk past the Staircase" },
+  { from: "f0-c-lh17", to: "f0-c-lh18", distance: 4, direction: "Continue past LH-17" },
+  { from: "f0-c-lh18", to: "f0-c-lh19", distance: 4, direction: "Continue past LH-18" },
   { from: "f0-c-lh19", to: "f0-c-right", distance: 4, direction: "Walk to the end of the corridor" },
 
   // Left Wing vertical corridor segments
-  { from: "f0-c-left", to: "f0-c-left-vertical-bottom", distance: 2, direction: "Turn left into the vertical corridor" },
-  { from: "f0-c-left-vertical-bottom", to: "f0-c-left-vertical-lh14", distance: 11, direction: "Walk straight up the corridor" },
-  { from: "f0-c-left-vertical-lh14", to: "f0-c-left-vertical-lh13", distance: 11, direction: "Continue up the corridor" },
-  { from: "f0-c-left-vertical-lh13", to: "f0-c-left-vertical-washroom", distance: 11, direction: "Continue up to the end" },
+  { from: "f0-c-left", to: "f0-c-left-vertical-lh5", distance: 8, direction: "Go up the left corridor stack" },
+  { from: "f0-c-left-vertical-lh5", to: "f0-c-left-vertical-lh4", distance: 8, direction: "Continue up the corridor" },
+  { from: "f0-c-left-vertical-lh4", to: "f0-c-left-vertical-lh3", distance: 8, direction: "Continue up past LH-4" },
+  { from: "f0-c-left-vertical-lh3", to: "f0-c-left-vertical-washroom", distance: 8, direction: "Continue up past LH-3" },
+  { from: "f0-c-left", to: "f0-c-left-vertical-bottom", distance: 11, direction: "Go down the left corridor stack" },
 
   // Right Wing vertical corridor segments
-  { from: "f0-c-right", to: "f0-c-right-vertical-bottom", distance: 2, direction: "Turn right into the vertical corridor" },
-  { from: "f0-c-right-vertical-bottom", to: "f0-c-right-vertical-girls", distance: 11, direction: "Walk straight up the corridor" },
-  { from: "f0-c-right-vertical-girls", to: "f0-c-right-vertical-lh20", distance: 11, direction: "Continue up the corridor" },
-  { from: "f0-c-right-vertical-lh20", to: "f0-c-right-vertical-physics", distance: 11, direction: "Continue up to the end" },
+  { from: "f0-c-right", to: "f0-c-right-vertical-girls", distance: 8, direction: "Go up the right corridor stack" },
+  { from: "f0-c-right-vertical-girls", to: "f0-c-right-vertical-lh20", distance: 10, direction: "Continue up past Girls Washroom" },
+  { from: "f0-c-right-vertical-lh20", to: "f0-c-right-vertical-physics", distance: 11, direction: "Continue up past LH-20" },
+  { from: "f0-c-right", to: "f0-c-right-vertical-bottom", distance: 11, direction: "Go down the right corridor stack" },
 
   // Connect rooms to corridor waypoints
-  // Left stack
-  { from: "f0-c-left-vertical-washroom", to: "f0-boys-washroom", distance: 4, direction: "Enter Boys Washroom" },
-  { from: "f0-c-left-vertical-lh13", to: "f0-lh-13", distance: 4, direction: "Enter LH-13" },
-  { from: "f0-c-left-vertical-lh14", to: "f0-lh-14", distance: 4, direction: "Enter LH-14" },
-  { from: "f0-c-left-vertical-bottom", to: "f0-staff-room", distance: 4, direction: "Enter Staff Room" },
+  // Left Wing stack
+  { from: "f0-c-left-vertical-washroom", to: "f0-boys-washroom", distance: 3, direction: "Enter Boys Washroom" },
+  { from: "f0-c-left-vertical-lh3", to: "f0-lh-3", distance: 3, direction: "Enter LH-3" },
+  { from: "f0-c-left-vertical-lh4", to: "f0-lh-4", distance: 3, direction: "Enter LH-4" },
+  { from: "f0-c-left-vertical-lh5", to: "f0-lh-5", distance: 3, direction: "Enter LH-5" },
+  { from: "f0-c-left-vertical-bottom", to: "f0-staff-room", distance: 3, direction: "Enter Principal Staff room and accounts" },
 
-  // Top center stack
-  { from: "f0-c-lh15", to: "f0-lh-15", distance: 9, direction: "Enter LH-15" },
-  { from: "f0-c-lh16", to: "f0-lh-16", distance: 9, direction: "Enter LH-16" },
-  { from: "f0-c-complab1", to: "f0-computer-lab-1", distance: 9, direction: "Enter Computer Lab 1" },
-  { from: "f0-c-stairs-left", to: "f0-stairs", distance: 9, direction: "Walk to the Staircase" },
-  { from: "f0-c-center", to: "f0-central-stairs", distance: 9, direction: "Walk to the Central structure" },
-  { from: "f0-c-lift", to: "f0-lift", distance: 9, direction: "Step into the Lift" },
-  { from: "f0-c-stairs-right", to: "f0-stairs-right", distance: 9, direction: "Walk to the Staircase" },
-  { from: "f0-c-lh17", to: "f0-lh-17", distance: 9, direction: "Enter LH-17" },
-  { from: "f0-c-lh18", to: "f0-lh-18", distance: 9, direction: "Enter LH-18" },
-  { from: "f0-c-lh19", to: "f0-lh-19", distance: 9, direction: "Enter LH-19" },
+  // Top Center rooms
+  { from: "f0-c-lh7", to: "f0-lh-7", distance: 8, direction: "Enter LH-7" },
+  { from: "f0-c-lh8", to: "f0-lh-8", distance: 8, direction: "Enter LH-8" },
+  { from: "f0-c-lh9", to: "f0-lh-9", distance: 8, direction: "Enter LH-9" },
+  { from: "f0-c-electrical", to: "f0-electrical-room", distance: 8, direction: "Enter the Electrical Room" },
+  { from: "f0-c-stairs-left", to: "f0-stairs", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f0-c-lift-left", to: "f0-lift", distance: 8, direction: "Step into the Lift" },
+  { from: "f0-c-clp-cn-lab", to: "f0-clp-cn-lab", distance: 8, direction: "Enter CLP/CN Lab" },
+  { from: "f0-c-dbms-fs-lab", to: "f0-dbms-fs-lab", distance: 8, direction: "Enter DBMS/FS Lab" },
+  { from: "f0-c-ups-room", to: "f0-ups-room", distance: 8, direction: "Enter the UPS Room 16" },
+  { from: "f0-c-lift-right", to: "f0-lift-2", distance: 8, direction: "Step into the Lift" },
+  { from: "f0-c-stairs-right", to: "f0-stairs-2", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f0-c-lh17", to: "f0-lh-17", distance: 8, direction: "Enter LH-17" },
+  { from: "f0-c-lh18", to: "f0-lh-18", distance: 8, direction: "Enter LH-18" },
+  { from: "f0-c-lh19", to: "f0-lh-19", distance: 8, direction: "Enter LH-19" },
 
-  // Bottom center
-  { from: "f0-c-lh16", to: "f0-computer-lab-2", distance: 11, direction: "Enter Computer Lab - 2" },
+  // Bottom Center room
+  { from: "f0-c-clp-cn-lab", to: "f0-computer-lab-2", distance: 10, direction: "Enter Computer Lab-2" },
 
-  // Right stack
-  { from: "f0-c-right-vertical-physics", to: "f0-physics-lab", distance: 4, direction: "Enter Physics Lab" },
-  { from: "f0-c-right-vertical-lh20", to: "f0-lh-20", distance: 4, direction: "Enter LH-20" },
-  { from: "f0-c-right-vertical-girls", to: "f0-girls-restroom", distance: 4, direction: "Enter Girls Rest Room" },
-  { from: "f0-c-right-vertical-bottom", to: "f0-chemistry-lab", distance: 4, direction: "Enter Chemistry Lab" },
+  // Right Wing stack
+  { from: "f0-c-right-vertical-physics", to: "f0-physics-lab", distance: 3, direction: "Enter Physics Lab" },
+  { from: "f0-c-right-vertical-lh20", to: "f0-lh-20", distance: 3, direction: "Enter LH-20" },
+  { from: "f0-c-right-vertical-girls", to: "f0-girls-washroom", distance: 3, direction: "Enter GIRLS Washroom" },
+  { from: "f0-c-right-vertical-bottom", to: "f0-chemistry-lab", distance: 3, direction: "Enter Chemistry Lab" },
+
+  // Extra inter-floor links for the secondary lift/stairs on ground floor to connect to floor 1
+  { from: "f0-lift-2", to: "f1-lift", distance: 5, direction: "Take the Lift up from Ground Floor to 1st Floor" },
+  { from: "f1-lift", to: "f0-lift-2", distance: 5, direction: "Take the Lift down from 1st Floor to Ground Floor" },
+  { from: "f0-stairs-2", to: "f1-stairs", distance: 7, direction: "Take the Stairs up from Ground Floor to 1st Floor" },
+  { from: "f1-stairs", to: "f0-stairs-2", distance: 7, direction: "Take the Stairs down from 1st Floor to Ground Floor" },
 ];
 
-// Dedicated Second Floor Locations (calibrated to the new portrait image)
+// Dedicated Second Floor Locations (calibrated to the new landscape image)
 const secondLocations: Location[] = [
-  // Top horizontal area
-  { id: "f2-library", name: "2nd Floor - Library", type: "facility", x: 46, y: 5, floor: 2 },
-  { id: "f2-toilet-top", name: "2nd Floor - Toilet (Top)", type: "facility", x: 70, y: 5, floor: 2 },
+  // Left Wing (vertical stack)
+  { id: "f2-toilet-left", name: "2nd Floor - Toilet", type: "facility", x: 7, y: 12, floor: 2 },
+  { id: "f2-library", name: "2nd Floor - Library", type: "facility", x: 7, y: 49, floor: 2 },
 
-  // Left of vertical corridor
-  { id: "f2-dept-ce-hod-205", name: "2nd Floor - Dept of C.E HOD - 205", type: "classroom", x: 30, y: 36, floor: 2 },
-  { id: "f2-staffroom-208", name: "2nd Floor - Staffroom - 208", type: "facility", x: 30, y: 58, floor: 2 },
-  { id: "f2-classroom-212", name: "2nd Floor - Classroom - 212", type: "classroom", x: 30, y: 87, floor: 2 },
+  // Center top rooms (above main corridor)
+  { id: "f2-classroom-202", name: "2nd Floor - Classroom - 202", type: "classroom", x: 18, y: 49, floor: 2 },
+  { id: "f2-classroom-203", name: "2nd Floor - Classroom - 203", type: "classroom", x: 24, y: 49, floor: 2 },
+  { id: "f2-classroom-204", name: "2nd Floor - Classroom - 204", type: "classroom", x: 30, y: 49, floor: 2 },
+  { id: "f2-stairs", name: "2nd Floor - Staircase (Left)", type: "stairs", x: 38, y: 49, floor: 2 },
+  { id: "f2-lift", name: "2nd Floor - Lift (Left)", type: "lift", x: 41, y: 49, floor: 2 },
+  { id: "f2-classroom-206", name: "2nd Floor - Classroom - 206", type: "classroom", x: 45, y: 49, floor: 2 },
+  { id: "f2-classroom-207", name: "2nd Floor - Classroom - 207", type: "classroom", x: 51, y: 49, floor: 2 },
+  { id: "f2-lift-2", name: "2nd Floor - Lift (Right)", type: "lift", x: 60, y: 49, floor: 2 },
+  { id: "f2-stairs-2", name: "2nd Floor - Staircase (Right)", type: "stairs", x: 64, y: 49, floor: 2 },
+  { id: "f2-classroom-209", name: "2nd Floor - Classroom - 209", type: "classroom", x: 70, y: 49, floor: 2 },
+  { id: "f2-classroom-210", name: "2nd Floor - Classroom - 210", type: "classroom", x: 76, y: 49, floor: 2 },
+  { id: "f2-classroom-211", name: "2nd Floor - Classroom - 211", type: "classroom", x: 82, y: 49, floor: 2 },
 
-  // Right of vertical corridor
-  { id: "f2-classroom-202", name: "2nd Floor - Classroom - 202", type: "classroom", x: 54, y: 13, floor: 2 },
-  { id: "f2-classroom-203", name: "2nd Floor - Classroom - 203", type: "classroom", x: 54, y: 20, floor: 2 },
-  { id: "f2-classroom-204", name: "2nd Floor - Classroom - 204", type: "classroom", x: 54, y: 27, floor: 2 },
-  { id: "f2-lift", name: "2nd Floor - Lift 1", type: "lift", x: 50, y: 33, floor: 2 },
-  { id: "f2-classroom-206", name: "2nd Floor - Classroom - 206", type: "classroom", x: 54, y: 38, floor: 2 },
-  { id: "f2-classroom-207", name: "2nd Floor - Classroom - 207", type: "classroom", x: 54, y: 46, floor: 2 },
-  { id: "f2-lift-2", name: "2nd Floor - Lift 2", type: "lift", x: 50, y: 53, floor: 2 },
-  { id: "f2-classroom-209", name: "2nd Floor - Classroom - 209", type: "classroom", x: 54, y: 58, floor: 2 },
-  { id: "f2-classroom-210", name: "2nd Floor - Classroom - 210", type: "classroom", x: 54, y: 65, floor: 2 },
-  { id: "f2-classroom-211", name: "2nd Floor - Classroom - 211", type: "classroom", x: 54, y: 73, floor: 2 },
+  // Center bottom rooms
+  { id: "f2-dept-ce-hod-205", name: "2nd Floor - Dept of CE HOD - 205", type: "classroom", x: 31, y: 74, floor: 2 },
+  { id: "f2-staffroom-208", name: "2nd Floor - Staffroom - 208", type: "facility", x: 60, y: 74, floor: 2 },
 
-  // Bottom double doors / stairs
-  { id: "f2-stairs", name: "2nd Floor - Staircase", type: "stairs", x: 42, y: 81, floor: 2 },
+  // Right Wing (vertical stack)
+  { id: "f2-classroom-216", name: "2nd Floor - Classroom - 216", type: "classroom", x: 93, y: 15, floor: 2 },
+  { id: "f2-lab-215", name: "2nd Floor - LAB - 215", type: "lab", x: 93, y: 33, floor: 2 },
+  { id: "f2-toilet-214", name: "2nd Floor - Toilet - 214", type: "facility", x: 93, y: 49, floor: 2 },
+  { id: "f2-toilet-213", name: "2nd Floor - Toilet - 213", type: "facility", x: 93, y: 62, floor: 2 },
+  { id: "f2-classroom-212", name: "2nd Floor - Classroom - 212", type: "classroom", x: 93, y: 80, floor: 2 },
 
-  // Bottom horizontal stack
-  { id: "f2-toilet-213", name: "2nd Floor - Toilet - 213", type: "facility", x: 50, y: 89, floor: 2 },
-  { id: "f2-toilet-214", name: "2nd Floor - Toilet - 214", type: "facility", x: 59, y: 89, floor: 2 },
-  { id: "f2-lab-215", name: "2nd Floor - LAB - 215", type: "lab", x: 70, y: 89, floor: 2 },
-  { id: "f2-classroom-216", name: "2nd Floor - Classroom - 216", type: "classroom", x: 83, y: 89, floor: 2 },
+  // Corridor Waypoints - Main Horizontal Corridor at y = 62%
+  { id: "f2-c-left", name: "2nd Floor - Corridor Left End", type: "corridor", x: 12, y: 62, floor: 2 },
+  { id: "f2-c-202", name: "2nd Floor - Corridor near Classroom 202", type: "corridor", x: 18, y: 62, floor: 2 },
+  { id: "f2-c-203", name: "2nd Floor - Corridor near Classroom 203", type: "corridor", x: 24, y: 62, floor: 2 },
+  { id: "f2-c-204", name: "2nd Floor - Corridor near Classroom 204", type: "corridor", x: 30, y: 62, floor: 2 },
+  { id: "f2-c-stairs-left", name: "2nd Floor - Corridor near Left Stairs", type: "corridor", x: 38, y: 62, floor: 2 },
+  { id: "f2-c-lift-left", name: "2nd Floor - Corridor near Left Lift", type: "corridor", x: 41, y: 62, floor: 2 },
+  { id: "f2-c-206", name: "2nd Floor - Corridor near Classroom 206", type: "corridor", x: 45, y: 62, floor: 2 },
+  { id: "f2-c-207", name: "2nd Floor - Corridor near Classroom 207", type: "corridor", x: 51, y: 62, floor: 2 },
+  { id: "f2-c-lift-right", name: "2nd Floor - Corridor near Right Lift", type: "corridor", x: 60, y: 62, floor: 2 },
+  { id: "f2-c-stairs-right", name: "2nd Floor - Corridor near Right Stairs", type: "corridor", x: 64, y: 62, floor: 2 },
+  { id: "f2-c-209", name: "2nd Floor - Corridor near Classroom 209", type: "corridor", x: 70, y: 62, floor: 2 },
+  { id: "f2-c-210", name: "2nd Floor - Corridor near Classroom 210", type: "corridor", x: 76, y: 62, floor: 2 },
+  { id: "f2-c-211", name: "2nd Floor - Corridor near Classroom 211", type: "corridor", x: 82, y: 62, floor: 2 },
+  { id: "f2-c-right", name: "2nd Floor - Corridor Right End", type: "corridor", x: 88, y: 62, floor: 2 },
 
-  // Corridor Waypoints - Vertical Stack
-  { id: "f2-c-top", name: "2nd Floor - Corridor Top", type: "corridor", x: 42, y: 9, floor: 2 },
-  { id: "f2-c-202", name: "2nd Floor - Corridor near Classroom 202", type: "corridor", x: 42, y: 13, floor: 2 },
-  { id: "f2-c-203", name: "2nd Floor - Corridor near Classroom 203", type: "corridor", x: 42, y: 20, floor: 2 },
-  { id: "f2-c-204", name: "2nd Floor - Corridor near Classroom 204", type: "corridor", x: 42, y: 27, floor: 2 },
-  { id: "f2-c-lift1", name: "2nd Floor - Corridor near Lift 1", type: "corridor", x: 42, y: 33, floor: 2 },
-  { id: "f2-c-206", name: "2nd Floor - Corridor near Classroom 206", type: "corridor", x: 42, y: 38, floor: 2 },
-  { id: "f2-c-207", name: "2nd Floor - Corridor near Classroom 207", type: "corridor", x: 42, y: 46, floor: 2 },
-  { id: "f2-c-lift2", name: "2nd Floor - Corridor near Lift 2", type: "corridor", x: 42, y: 53, floor: 2 },
-  { id: "f2-c-209", name: "2nd Floor - Corridor near Classroom 209", type: "corridor", x: 42, y: 58, floor: 2 },
-  { id: "f2-c-210", name: "2nd Floor - Corridor near Classroom 210", type: "corridor", x: 42, y: 65, floor: 2 },
-  { id: "f2-c-211", name: "2nd Floor - Corridor near Classroom 211", type: "corridor", x: 42, y: 73, floor: 2 },
-  { id: "f2-c-bottom-junction", name: "2nd Floor - Corridor Bottom Junction", type: "corridor", x: 42, y: 81, floor: 2 },
+  // Corridor Waypoints - Left Wing Vertical Corridor Stack (runs along x = 12%)
+  { id: "f2-c-left-vertical-toilet", name: "2nd Floor - Left Corridor near Toilet", type: "corridor", x: 12, y: 12, floor: 2 },
+  { id: "f2-c-left-vertical-library", name: "2nd Floor - Left Corridor near Library", type: "corridor", x: 12, y: 49, floor: 2 },
 
-  // Corridor Waypoints - Bottom Horizontal Stack
-  { id: "f2-c-212", name: "2nd Floor - Corridor near Classroom 212", type: "corridor", x: 38, y: 81, floor: 2 },
-  { id: "f2-c-213", name: "2nd Floor - Corridor near Toilet 213", type: "corridor", x: 50, y: 81, floor: 2 },
-  { id: "f2-c-214", name: "2nd Floor - Corridor near Toilet 214", type: "corridor", x: 59, y: 81, floor: 2 },
-  { id: "f2-c-215", name: "2nd Floor - Corridor near LAB 215", type: "corridor", x: 70, y: 81, floor: 2 },
-  { id: "f2-c-216", name: "2nd Floor - Corridor near Classroom 216", type: "corridor", x: 83, y: 81, floor: 2 },
+  // Corridor Waypoints - Right Wing Vertical Corridor Stack (runs along x = 88%)
+  { id: "f2-c-right-vertical-216", name: "2nd Floor - Right Corridor near Classroom 216", type: "corridor", x: 88, y: 15, floor: 2 },
+  { id: "f2-c-right-vertical-215", name: "2nd Floor - Right Corridor near LAB 215", type: "corridor", x: 88, y: 33, floor: 2 },
+  { id: "f2-c-right-vertical-214", name: "2nd Floor - Right Corridor near Toilet 214", type: "corridor", x: 88, y: 49, floor: 2 },
+  { id: "f2-c-right-vertical-bottom", name: "2nd Floor - Right Corridor near Classroom 212", type: "corridor", x: 88, y: 80, floor: 2 },
 ];
 
 const secondConnections: Connection[] = [
-  // Vertical corridor segments
-  { from: "f2-c-top", to: "f2-c-202", distance: 4, direction: "Walk straight down the corridor" },
-  { from: "f2-c-202", to: "f2-c-203", distance: 7, direction: "Continue down the corridor" },
-  { from: "f2-c-203", to: "f2-c-204", distance: 7, direction: "Continue past Classroom 203" },
-  { from: "f2-c-204", to: "f2-c-lift1", distance: 6, direction: "Continue past Classroom 204" },
-  { from: "f2-c-lift1", to: "f2-c-206", distance: 5, direction: "Continue past the Lift area" },
-  { from: "f2-c-206", to: "f2-c-207", distance: 8, direction: "Continue past Classroom 206" },
-  { from: "f2-c-207", to: "f2-c-lift2", distance: 7, direction: "Continue past Classroom 207" },
-  { from: "f2-c-lift2", to: "f2-c-209", distance: 5, direction: "Continue past the second Lift area" },
-  { from: "f2-c-209", to: "f2-c-210", distance: 7, direction: "Continue past Classroom 209" },
-  { from: "f2-c-210", to: "f2-c-211", distance: 8, direction: "Continue past Classroom 210" },
-  { from: "f2-c-211", to: "f2-c-bottom-junction", distance: 8, direction: "Walk to the bottom of the corridor" },
+  // Main Horizontal Corridor segments (left to right)
+  { from: "f2-c-left", to: "f2-c-202", distance: 4, direction: "Walk straight along the corridor" },
+  { from: "f2-c-202", to: "f2-c-203", distance: 4, direction: "Continue straight past Classroom 202" },
+  { from: "f2-c-203", to: "f2-c-204", distance: 4, direction: "Continue past Classroom 203" },
+  { from: "f2-c-204", to: "f2-c-stairs-left", distance: 5, direction: "Continue past Classroom 204" },
+  { from: "f2-c-stairs-left", to: "f2-c-lift-left", distance: 2, direction: "Walk past the Staircase" },
+  { from: "f2-c-lift-left", to: "f2-c-206", distance: 3, direction: "Continue past the Lift" },
+  { from: "f2-c-206", to: "f2-c-207", distance: 4, direction: "Continue past Classroom 206" },
+  { from: "f2-c-207", to: "f2-c-lift-right", distance: 5, direction: "Continue past Classroom 207" },
+  { from: "f2-c-lift-right", to: "f2-c-stairs-right", distance: 2, direction: "Continue past the Lift" },
+  { from: "f2-c-stairs-right", to: "f2-c-209", distance: 4, direction: "Walk past the Staircase" },
+  { from: "f2-c-209", to: "f2-c-210", distance: 4, direction: "Continue past Classroom 209" },
+  { from: "f2-c-210", to: "f2-c-211", distance: 4, direction: "Continue past Classroom 210" },
+  { from: "f2-c-211", to: "f2-c-right", distance: 4, direction: "Walk to the end of the corridor" },
 
-  // Bottom horizontal corridor segments
-  { from: "f2-c-212", to: "f2-c-bottom-junction", distance: 4, direction: "Walk along the corridor" },
-  { from: "f2-c-bottom-junction", to: "f2-c-213", distance: 8, direction: "Walk along the corridor towards the right" },
-  { from: "f2-c-213", to: "f2-c-214", distance: 9, direction: "Continue along the corridor" },
-  { from: "f2-c-214", to: "f2-c-215", distance: 11, direction: "Continue past Toilet 214" },
-  { from: "f2-c-215", to: "f2-c-216", distance: 13, direction: "Walk towards Classroom 216" },
+  // Left Wing vertical corridor segments
+  { from: "f2-c-left", to: "f2-c-left-vertical-library", distance: 8, direction: "Go up the left corridor stack" },
+  { from: "f2-c-left-vertical-library", to: "f2-c-left-vertical-toilet", distance: 20, direction: "Continue up the corridor past the Library" },
 
-  // Connect rooms
-  { from: "f2-c-top", to: "f2-library", distance: 6, direction: "Enter the Library" },
-  { from: "f2-c-top", to: "f2-toilet-top", distance: 28, direction: "Enter Toilet" },
+  // Right Wing vertical corridor segments
+  { from: "f2-c-right", to: "f2-c-right-vertical-214", distance: 8, direction: "Go up the right corridor stack" },
+  { from: "f2-c-right-vertical-214", to: "f2-c-right-vertical-215", distance: 10, direction: "Continue up past Toilet 214" },
+  { from: "f2-c-right-vertical-215", to: "f2-c-right-vertical-216", distance: 11, direction: "Continue up past LAB 215" },
+  { from: "f2-c-right", to: "f2-c-right-vertical-bottom", distance: 11, direction: "Go down the right corridor stack" },
 
-  { from: "f2-c-lift1", to: "f2-dept-ce-hod-205", distance: 12, direction: "Enter Dept of C.E HOD - 205" },
-  { from: "f2-c-lift2", to: "f2-staffroom-208", distance: 12, direction: "Enter Staffroom - 208" },
-  { from: "f2-c-212", to: "f2-classroom-212", distance: 8, direction: "Enter Classroom - 212" },
+  // Connect rooms to corridor waypoints
+  // Left Wing stack
+  { from: "f2-c-left-vertical-toilet", to: "f2-toilet-left", distance: 3, direction: "Enter Toilet" },
+  { from: "f2-c-left-vertical-library", to: "f2-library", distance: 3, direction: "Enter the Library" },
 
-  { from: "f2-c-202", to: "f2-classroom-202", distance: 12, direction: "Enter Classroom - 202" },
-  { from: "f2-c-203", to: "f2-classroom-203", distance: 12, direction: "Enter Classroom - 203" },
-  { from: "f2-c-204", to: "f2-classroom-204", distance: 12, direction: "Enter Classroom - 204" },
-  { from: "f2-c-lift1", to: "f2-lift", distance: 8, direction: "Step into Lift 1" },
-  { from: "f2-c-206", to: "f2-classroom-206", distance: 12, direction: "Enter Classroom - 206" },
-  { from: "f2-c-207", to: "f2-classroom-207", distance: 12, direction: "Enter Classroom - 207" },
-  { from: "f2-c-lift2", to: "f2-lift-2", distance: 8, direction: "Step into Lift 2" },
-  { from: "f2-c-209", to: "f2-classroom-209", distance: 12, direction: "Enter Classroom - 209" },
-  { from: "f2-c-210", to: "f2-classroom-210", distance: 12, direction: "Enter Classroom - 210" },
-  { from: "f2-c-211", to: "f2-classroom-211", distance: 12, direction: "Enter Classroom - 211" },
+  // Top Center rooms
+  { from: "f2-c-202", to: "f2-classroom-202", distance: 8, direction: "Enter Classroom - 202" },
+  { from: "f2-c-203", to: "f2-classroom-203", distance: 8, direction: "Enter Classroom - 203" },
+  { from: "f2-c-204", to: "f2-classroom-204", distance: 8, direction: "Enter Classroom - 204" },
+  { from: "f2-c-stairs-left", to: "f2-stairs", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f2-c-lift-left", to: "f2-lift", distance: 8, direction: "Step into the Lift" },
+  { from: "f2-c-206", to: "f2-classroom-206", distance: 8, direction: "Enter Classroom - 206" },
+  { from: "f2-c-207", to: "f2-classroom-207", distance: 8, direction: "Enter Classroom - 207" },
+  { from: "f2-c-lift-right", to: "f2-lift-2", distance: 8, direction: "Step into the Lift" },
+  { from: "f2-c-stairs-right", to: "f2-stairs-2", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f2-c-209", to: "f2-classroom-209", distance: 8, direction: "Enter Classroom - 209" },
+  { from: "f2-c-210", to: "f2-classroom-210", distance: 8, direction: "Enter Classroom - 210" },
+  { from: "f2-c-211", to: "f2-classroom-211", distance: 8, direction: "Enter Classroom - 211" },
 
-  { from: "f2-c-bottom-junction", to: "f2-stairs", distance: 1, direction: "Walk to the Staircase" },
+  // Bottom Center rooms
+  { from: "f2-c-204", to: "f2-dept-ce-hod-205", distance: 10, direction: "Enter Dept of CE HOD - 205" },
+  { from: "f2-c-lift-right", to: "f2-staffroom-208", distance: 10, direction: "Enter Staffroom - 208" },
 
-  { from: "f2-c-213", to: "f2-toilet-213", distance: 8, direction: "Enter Toilet - 213" },
-  { from: "f2-c-214", to: "f2-toilet-214", distance: 8, direction: "Enter Toilet - 214" },
-  { from: "f2-c-215", to: "f2-lab-215", distance: 8, direction: "Enter LAB - 215" },
-  { from: "f2-c-216", to: "f2-classroom-216", distance: 8, direction: "Enter Classroom - 216" },
+  // Right Wing stack
+  { from: "f2-c-right-vertical-216", to: "f2-classroom-216", distance: 3, direction: "Enter Classroom - 216" },
+  { from: "f2-c-right-vertical-215", to: "f2-lab-215", distance: 3, direction: "Enter LAB - 215" },
+  { from: "f2-c-right-vertical-214", to: "f2-toilet-214", distance: 3, direction: "Enter Toilet - 214" },
+  { from: "f2-c-right", to: "f2-toilet-213", distance: 3, direction: "Enter Toilet - 213" },
+  { from: "f2-c-right-vertical-bottom", to: "f2-classroom-212", distance: 3, direction: "Enter Classroom - 212" },
+
+  // Secondary Lift/Stairs Inter-floor connections
+  { from: "f2-lift-2", to: "f1-lift-2", distance: 5, direction: "Take the Lift down from 2nd Floor to 1st Floor" },
+{ from: "f1-lift-2", to: "f2-lift-2", distance: 5, direction: "Take the Lift up from 1st Floor to 2nd Floor" },
+  { from: "f2-stairs-2", to: "f1-stairs-2", distance: 7, direction: "Take the Stairs down from 2nd Floor to 1st Floor" },
+  { from: "f1-stairs-2", to: "f2-stairs-2", distance: 7, direction: "Take the Stairs up from 2nd Floor to 1st Floor" },
 ];
 
-// Dedicated Third Floor Locations (calibrated to the new landscape image)
 const thirdLocations: Location[] = [
   // Left Wing (vertical stack)
-  { id: "f3-boys-toilet-301", name: "3rd Floor - Boys Toilet 301", type: "facility", x: 6, y: 14, floor: 3 },
-  { id: "f3-director-mba-303", name: "3rd Floor - Director MBA 303", type: "classroom", x: 10, y: 29, floor: 3 },
-  { id: "f3-cr-304", name: "3rd Floor - CR 304", type: "classroom", x: 10, y: 37, floor: 3 },
-  { id: "f3-cr-305-hall", name: "3rd Floor - CR - 305 Hall", type: "classroom", x: 10, y: 45, floor: 3 },
-  { id: "f3-cr-306", name: "3rd Floor - CR - 306", type: "classroom", x: 10, y: 55, floor: 3 },
-  { id: "f3-mba-dept-307", name: "3rd Floor - MBA department CR - 307", type: "classroom", x: 9, y: 67, floor: 3 },
-  { id: "f3-cr-308", name: "3rd Floor - C.R - 308", type: "classroom", x: 9, y: 74, floor: 3 },
-  { id: "f3-stairs-left", name: "3rd Floor - MBA Staircase (Left)", type: "stairs", x: 4, y: 61, floor: 3 },
+  { id: "f3-boys-toilet-301", name: "3rd Floor - Boys Toilet 301", type: "facility", x: 7, y: 12, floor: 3 },
+  { id: "f3-director-mba-303", name: "3rd Floor - Director MBA 303", type: "classroom", x: 7, y: 25, floor: 3 },
+  { id: "f3-cr-304", name: "3rd Floor - CR 304", type: "classroom", x: 7, y: 37, floor: 3 },
+  { id: "f3-cr-305-hall", name: "3rd Floor - CR - 305 Hall", type: "classroom", x: 7, y: 49, floor: 3 },
+  { id: "f3-cr-306", name: "3rd Floor - CR - 306", type: "classroom", x: 7, y: 55, floor: 3 },
+  { id: "f3-mba-dept-307", name: "3rd Floor - MBA department CR - 307 class room", type: "classroom", x: 7, y: 67, floor: 3 },
+  { id: "f3-cr-308", name: "3rd Floor - C.R - 308", type: "classroom", x: 7, y: 80, floor: 3 },
 
-  // Center top stack (above corridor)
-  { id: "f3-cr-309", name: "3rd Floor - CR - 309", type: "classroom", x: 20, y: 53, floor: 3 },
-  { id: "f3-cr-310", name: "3rd Floor - CR - 310", type: "classroom", x: 26, y: 53, floor: 3 },
-  { id: "f3-cr-311", name: "3rd Floor - C.R - 311", type: "classroom", x: 35, y: 53, floor: 3 },
-  { id: "f3-stairs", name: "3rd Floor - Staircase", type: "stairs", x: 43, y: 53, floor: 3 },
-  { id: "f3-lift", name: "3rd Floor - Lift", type: "lift", x: 43, y: 53, floor: 3 },
-  { id: "f3-ece-314", name: "3rd Floor - ECE 314", type: "classroom", x: 47, y: 53, floor: 3 },
-  { id: "f3-room-315", name: "3rd Floor - Room 315", type: "classroom", x: 52, y: 53, floor: 3 },
-  { id: "f3-room-302", name: "3rd Floor - Room 302", type: "classroom", x: 55, y: 53, floor: 3 },
-  { id: "f3-room-301", name: "3rd Floor - Room 301", type: "classroom", x: 59, y: 53, floor: 3 },
-  { id: "f3-stairs-right", name: "3rd Floor - Staircase (Right)", type: "stairs", x: 64, y: 53, floor: 3 },
-  { id: "f3-cr-319", name: "3rd Floor - CR - 319", type: "classroom", x: 72, y: 53, floor: 3 },
-  { id: "f3-cr-320", name: "3rd Floor - CR - 320", type: "classroom", x: 82, y: 53, floor: 3 },
+  // Center top rooms (above corridor)
+  { id: "f3-cr-309", name: "3rd Floor - CR - 309 class room", type: "classroom", x: 20, y: 49, floor: 3 },
+  { id: "f3-cr-310", name: "3rd Floor - CR - 310 class room", type: "classroom", x: 26, y: 49, floor: 3 },
+  { id: "f3-cr-311", name: "3rd Floor - C.R - 311 class room", type: "classroom", x: 35, y: 49, floor: 3 },
+  { id: "f3-stairs", name: "3rd Floor - Staircase (Left)", type: "stairs", x: 38, y: 49, floor: 3 },
+  { id: "f3-lift", name: "3rd Floor - Lift (Left)", type: "lift", x: 41, y: 49, floor: 3 },
+  { id: "f3-ece-314", name: "3rd Floor - ECE 314 class room", type: "classroom", x: 45, y: 49, floor: 3 },
+  { id: "f3-room-315", name: "3rd Floor - 315 class room", type: "classroom", x: 49, y: 49, floor: 3 },
+  { id: "f3-room-302", name: "3rd Floor - 302 class room", type: "classroom", x: 53, y: 49, floor: 3 },
+  { id: "f3-room-301", name: "3rd Floor - 301 class room", type: "classroom", x: 57, y: 49, floor: 3 },
+  { id: "f3-lift-2", name: "3rd Floor - Lift (Right)", type: "lift", x: 60, y: 49, floor: 3 },
+  { id: "f3-stairs-2", name: "3rd Floor - Staircase (Right)", type: "stairs", x: 64, y: 49, floor: 3 },
+  { id: "f3-cr-319", name: "3rd Floor - CR - 319 class room", type: "classroom", x: 70, y: 49, floor: 3 },
+  { id: "f3-cr-320", name: "3rd Floor - CR - 320 class room", type: "classroom", x: 76, y: 49, floor: 3 },
 
   // Center bottom stack (below corridor)
-  { id: "f3-tutorial", name: "3rd Floor - Tutorial", type: "classroom", x: 34, y: 67, floor: 3 },
-  { id: "f3-staff-room", name: "3rd Floor - Staff Room", type: "facility", x: 43, y: 67, floor: 3 },
-  { id: "f3-dept-ece-hod-318", name: "3rd Floor - Dept ECE HOD-318", type: "classroom", x: 54, y: 67, floor: 3 },
+  { id: "f3-tutorial", name: "3rd Floor - Tutorial", type: "classroom", x: 31, y: 74, floor: 3 },
+  { id: "f3-staff-room", name: "3rd Floor - Staff Room", type: "facility", x: 43, y: 74, floor: 3 },
+  { id: "f3-dept-ece-hod-318", name: "3rd Floor - Dept ECE HOD-318", type: "classroom", x: 54, y: 74, floor: 3 },
 
   // Right Stack (vertical stack)
-  { id: "f3-cr-325", name: "3rd Floor - CR - 325", type: "classroom", x: 91, y: 32, floor: 3 },
-  { id: "f3-cred-326-lab", name: "3rd Floor - CRED-326 LAB", type: "lab", x: 91, y: 45, floor: 3 },
-  { id: "f3-girls-toilet-302-3", name: "3rd Floor - Girls Toilet 302-3", type: "facility", x: 91, y: 51, floor: 3 },
-  { id: "f3-boys-toilet-302-2", name: "3rd Floor - Boys Toilet 302-2", type: "facility", x: 91, y: 56, floor: 3 },
-  { id: "f3-cr-321", name: "3rd Floor - CR - 321", type: "classroom", x: 91, y: 70, floor: 3 },
+  { id: "f3-cr-325", name: "3rd Floor - CR - 325 class room", type: "classroom", x: 93, y: 15, floor: 3 },
+  { id: "f3-cred-326-lab", name: "3rd Floor - CRED-326 LAB", type: "lab", x: 93, y: 33, floor: 3 },
+  { id: "f3-girls-toilet-302-3", name: "3rd Floor - Girls Toilet 302-3", type: "facility", x: 93, y: 45, floor: 3 },
+  { id: "f3-boys-toilet-302-2", name: "3rd Floor - Boys Toilet 302-2", type: "facility", x: 93, y: 53, floor: 3 },
+  { id: "f3-cr-321", name: "3rd Floor - CR - 321 class room", type: "classroom", x: 93, y: 80, floor: 3 },
 
-  // Corridor Waypoints - Horizontal
-  { id: "f3-c-left", name: "3rd Floor - Corridor Left Junction", type: "corridor", x: 16, y: 61, floor: 3 },
-  { id: "f3-c-309", name: "3rd Floor - Corridor near CR-309", type: "corridor", x: 20, y: 61, floor: 3 },
-  { id: "f3-c-310", name: "3rd Floor - Corridor near CR-310", type: "corridor", x: 26, y: 61, floor: 3 },
-  { id: "f3-c-311", name: "3rd Floor - Corridor near CR-311", type: "corridor", x: 35, y: 61, floor: 3 },
-  { id: "f3-c-stairs1", name: "3rd Floor - Corridor near Left Stairs/Lift", type: "corridor", x: 43, y: 61, floor: 3 },
-  { id: "f3-c-ece314", name: "3rd Floor - Corridor near ECE 314", type: "corridor", x: 47, y: 61, floor: 3 },
-  { id: "f3-c-315-302", name: "3rd Floor - Corridor Center", type: "corridor", x: 54, y: 61, floor: 3 },
-  { id: "f3-c-301", name: "3rd Floor - Corridor near Room 301", type: "corridor", x: 59, y: 61, floor: 3 },
-  { id: "f3-c-stairs2", name: "3rd Floor - Corridor near Right Stairs", type: "corridor", x: 64, y: 61, floor: 3 },
-  { id: "f3-c-319", name: "3rd Floor - Corridor near CR-319", type: "corridor", x: 72, y: 61, floor: 3 },
-  { id: "f3-c-320", name: "3rd Floor - Corridor near CR-320", type: "corridor", x: 82, y: 61, floor: 3 },
-  { id: "f3-c-right", name: "3rd Floor - Corridor Right Junction", type: "corridor", x: 88, y: 61, floor: 3 },
+  // Corridor Waypoints - Horizontal Corridor at y = 62%
+  { id: "f3-c-left", name: "3rd Floor - Corridor Left End", type: "corridor", x: 12, y: 62, floor: 3 },
+  { id: "f3-c-309", name: "3rd Floor - Corridor near CR-309", type: "corridor", x: 20, y: 62, floor: 3 },
+  { id: "f3-c-310", name: "3rd Floor - Corridor near CR-310", type: "corridor", x: 26, y: 62, floor: 3 },
+  { id: "f3-c-311", name: "3rd Floor - Corridor near CR-311", type: "corridor", x: 35, y: 62, floor: 3 },
+  { id: "f3-c-stairs-left", name: "3rd Floor - Corridor near Left Stairs", type: "corridor", x: 38, y: 62, floor: 3 },
+  { id: "f3-c-lift-left", name: "3rd Floor - Corridor near Left Lift", type: "corridor", x: 41, y: 62, floor: 3 },
+  { id: "f3-c-ece314", name: "3rd Floor - Corridor near ECE 314", type: "corridor", x: 45, y: 62, floor: 3 },
+  { id: "f3-c-315", name: "3rd Floor - Corridor near Room 315", type: "corridor", x: 49, y: 62, floor: 3 },
+  { id: "f3-c-302", name: "3rd Floor - Corridor near Room 302", type: "corridor", x: 53, y: 62, floor: 3 },
+  { id: "f3-c-301", name: "3rd Floor - Corridor near Room 301", type: "corridor", x: 57, y: 62, floor: 3 },
+  { id: "f3-c-lift-right", name: "3rd Floor - Corridor near Right Lift", type: "corridor", x: 60, y: 62, floor: 3 },
+  { id: "f3-c-stairs-right", name: "3rd Floor - Corridor near Right Stairs", type: "corridor", x: 64, y: 62, floor: 3 },
+  { id: "f3-c-319", name: "3rd Floor - Corridor near CR-319", type: "corridor", x: 70, y: 62, floor: 3 },
+  { id: "f3-c-320", name: "3rd Floor - Corridor near CR-320", type: "corridor", x: 76, y: 62, floor: 3 },
+  { id: "f3-c-right", name: "3rd Floor - Corridor Right End", type: "corridor", x: 88, y: 62, floor: 3 },
 
-  // Corridor Waypoints - Left Wing Vertical
-  { id: "f3-c-left-vertical-top", name: "3rd Floor - Left Corridor near Toilet 301", type: "corridor", x: 16, y: 14, floor: 3 },
-  { id: "f3-c-left-vertical-303", name: "3rd Floor - Left Corridor near Director 303", type: "corridor", x: 16, y: 29, floor: 3 },
-  { id: "f3-c-left-vertical-304", name: "3rd Floor - Left Corridor near CR-304", type: "corridor", x: 16, y: 37, floor: 3 },
-  { id: "f3-c-left-vertical-305", name: "3rd Floor - Left Corridor near CR-305", type: "corridor", x: 16, y: 45, floor: 3 },
-  { id: "f3-c-left-vertical-306", name: "3rd Floor - Left Corridor near CR-306", type: "corridor", x: 16, y: 55, floor: 3 },
-  { id: "f3-c-left-vertical-307", name: "3rd Floor - Left Corridor near CR-307", type: "corridor", x: 16, y: 67, floor: 3 },
-  { id: "f3-c-left-vertical-308", name: "3rd Floor - Left Corridor near CR-308", type: "corridor", x: 16, y: 74, floor: 3 },
+  // Corridor Waypoints - Bottom rooms exits
+  { id: "f3-c-tutorial", name: "3rd Floor - Corridor near Tutorial", type: "corridor", x: 31, y: 62, floor: 3 },
+  { id: "f3-c-staff-room", name: "3rd Floor - Corridor near Staff Room", type: "corridor", x: 43, y: 62, floor: 3 },
+  { id: "f3-c-ece-hod", name: "3rd Floor - Corridor near Dept ECE HOD", type: "corridor", x: 54, y: 62, floor: 3 },
 
-  // Corridor Waypoints - Right Wing Vertical
-  { id: "f3-c-right-vertical-325", name: "3rd Floor - Right Corridor near CR-325", type: "corridor", x: 88, y: 32, floor: 3 },
-  { id: "f3-c-right-vertical-lab", name: "3rd Floor - Right Corridor near Lab", type: "corridor", x: 88, y: 45, floor: 3 },
-  { id: "f3-c-right-vertical-toilet", name: "3rd Floor - Right Corridor near Toilet", type: "corridor", x: 88, y: 54, floor: 3 },
-  { id: "f3-c-right-vertical-bottom", name: "3rd Floor - Right Corridor near CR-321", type: "corridor", x: 88, y: 70, floor: 3 },
+  // Corridor Waypoints - Left Wing Vertical Corridor Stack (runs along x = 12%)
+  { id: "f3-c-left-vertical-washroom", name: "3rd Floor - Left Corridor near Toilet", type: "corridor", x: 12, y: 12, floor: 3 },
+  { id: "f3-c-left-vertical-303", name: "3rd Floor - Left Corridor near Director 303", type: "corridor", x: 12, y: 25, floor: 3 },
+  { id: "f3-c-left-vertical-304", name: "3rd Floor - Left Corridor near CR-304", type: "corridor", x: 12, y: 37, floor: 3 },
+  { id: "f3-c-left-vertical-305", name: "3rd Floor - Left Corridor near CR-305", type: "corridor", x: 12, y: 49, floor: 3 },
+  { id: "f3-c-left-vertical-306", name: "3rd Floor - Left Corridor near CR-306", type: "corridor", x: 12, y: 55, floor: 3 },
+  { id: "f3-c-left-vertical-307", name: "3rd Floor - Left Corridor near CR-307", type: "corridor", x: 12, y: 67, floor: 3 },
+  { id: "f3-c-left-vertical-308", name: "3rd Floor - Left Corridor near CR-308", type: "corridor", x: 12, y: 80, floor: 3 },
+
+  // Corridor Waypoints - Right Wing Vertical Corridor Stack (runs along x = 88%)
+  { id: "f3-c-right-vertical-325", name: "3rd Floor - Right Corridor near CR-325", type: "corridor", x: 88, y: 15, floor: 3 },
+  { id: "f3-c-right-vertical-lab", name: "3rd Floor - Right Corridor near Lab", type: "corridor", x: 88, y: 33, floor: 3 },
+  { id: "f3-c-right-vertical-girls", name: "3rd Floor - Right Corridor near Girls Toilet", type: "corridor", x: 88, y: 45, floor: 3 },
+  { id: "f3-c-right-vertical-boys", name: "3rd Floor - Right Corridor near Boys Toilet", type: "corridor", x: 88, y: 53, floor: 3 },
+  { id: "f3-c-right-vertical-bottom", name: "3rd Floor - Right Corridor near CR-321", type: "corridor", x: 88, y: 80, floor: 3 },
 ];
 
 const thirdConnections: Connection[] = [
-  // Left Wing vertical corridor segments
-  { from: "f3-c-left-vertical-top", to: "f3-c-left-vertical-303", distance: 15, direction: "Walk straight down the corridor" },
-  { from: "f3-c-left-vertical-303", to: "f3-c-left-vertical-304", distance: 8, direction: "Continue down the corridor" },
-  { from: "f3-c-left-vertical-304", to: "f3-c-left-vertical-305", distance: 8, direction: "Continue past CR-304" },
-  { from: "f3-c-left-vertical-305", to: "f3-c-left-vertical-306", distance: 10, direction: "Continue past CR-305" },
-  { from: "f3-c-left-vertical-306", to: "f3-c-left", distance: 6, direction: "Walk towards the corridor junction" },
-  { from: "f3-c-left", to: "f3-c-left-vertical-307", distance: 6, direction: "Walk past the corridor junction" },
-  { from: "f3-c-left-vertical-307", to: "f3-c-left-vertical-308", distance: 7, direction: "Continue past MBA department 307" },
-
-  // Horizontal corridor segments
+  // Main Horizontal Corridor segments (left to right)
   { from: "f3-c-left", to: "f3-c-309", distance: 4, direction: "Walk straight along the corridor" },
-  { from: "f3-c-309", to: "f3-c-310", distance: 6, direction: "Continue straight past CR-309" },
-  { from: "f3-c-310", to: "f3-c-311", distance: 9, direction: "Continue past CR-310" },
-  { from: "f3-c-311", to: "f3-c-stairs1", distance: 8, direction: "Continue past CR-311" },
-  { from: "f3-c-stairs1", to: "f3-c-ece314", distance: 4, direction: "Continue past the Stairs/Lift block" },
-  { from: "f3-c-ece314", to: "f3-c-315-302", distance: 7, direction: "Continue past ECE 314" },
-  { from: "f3-c-315-302", to: "f3-c-301", distance: 5, direction: "Continue past class rooms" },
-  { from: "f3-c-301", to: "f3-c-stairs2", distance: 5, direction: "Continue past Room 301" },
-  { from: "f3-c-stairs2", to: "f3-c-319", distance: 8, direction: "Continue past the right Stairs block" },
-  { from: "f3-c-319", to: "f3-c-320", distance: 10, direction: "Continue past CR-319" },
-  { from: "f3-c-320", to: "f3-c-right", distance: 6, direction: "Walk to the end of the corridor" },
+  { from: "f3-c-309", to: "f3-c-310", distance: 4, direction: "Continue straight past CR-309" },
+  { from: "f3-c-310", to: "f3-c-311", distance: 4, direction: "Continue past CR-310" },
+  { from: "f3-c-311", to: "f3-c-tutorial", distance: 2, direction: "Continue past CR-311" },
+  { from: "f3-c-tutorial", to: "f3-c-stairs-left", distance: 2, direction: "Continue past Tutorial room" },
+  { from: "f3-c-stairs-left", to: "f3-c-lift-left", distance: 2, direction: "Walk past the Staircase" },
+  { from: "f3-c-lift-left", to: "f3-c-staff-room", distance: 2, direction: "Continue past the Lift" },
+  { from: "f3-c-staff-room", to: "f3-c-ece314", distance: 2, direction: "Continue past the Staff Room" },
+  { from: "f3-c-ece314", to: "f3-c-315", distance: 2, direction: "Continue past ECE 314" },
+  { from: "f3-c-315", to: "f3-c-302", distance: 2, direction: "Continue past Room 315" },
+  { from: "f3-c-302", to: "f3-c-ece-hod", distance: 1, direction: "Continue past Room 302" },
+  { from: "f3-c-ece-hod", to: "f3-c-301", distance: 1, direction: "Continue past Dept ECE HOD" },
+  { from: "f3-c-301", to: "f3-c-lift-right", distance: 1, direction: "Continue past Room 301" },
+  { from: "f3-c-lift-right", to: "f3-c-stairs-right", distance: 2, direction: "Continue past the Lift" },
+  { from: "f3-c-stairs-right", to: "f3-c-319", distance: 4, direction: "Walk past the Staircase" },
+  { from: "f3-c-319", to: "f3-c-320", distance: 4, direction: "Continue past CR-319" },
+  { from: "f3-c-320", to: "f3-c-right", distance: 4, direction: "Walk to the end of the corridor" },
+
+  // Left Wing vertical corridor segments
+  { from: "f3-c-left", to: "f3-c-left-vertical-306", distance: 8, direction: "Go up the left corridor stack" },
+  { from: "f3-c-left-vertical-306", to: "f3-c-left-vertical-305", distance: 8, direction: "Continue up the corridor" },
+  { from: "f3-c-left-vertical-305", to: "f3-c-left-vertical-304", distance: 8, direction: "Continue up past CR-305" },
+  { from: "f3-c-left-vertical-304", to: "f3-c-left-vertical-303", distance: 8, direction: "Continue up past CR-304" },
+  { from: "f3-c-left-vertical-303", to: "f3-c-left-vertical-washroom", distance: 8, direction: "Continue up to the end" },
+  { from: "f3-c-left", to: "f3-c-left-vertical-307", distance: 3, direction: "Go down the left corridor stack" },
+  { from: "f3-c-left-vertical-307", to: "f3-c-left-vertical-308", distance: 7, direction: "Continue down the corridor" },
 
   // Right Wing vertical corridor segments
-  { from: "f3-c-right-vertical-325", to: "f3-c-right-vertical-lab", distance: 13, direction: "Walk straight down the corridor" },
-  { from: "f3-c-right-vertical-lab", to: "f3-c-right-vertical-toilet", distance: 9, direction: "Continue down the corridor" },
-  { from: "f3-c-right-vertical-toilet", to: "f3-c-right", distance: 7, direction: "Walk towards the corridor junction" },
-  { from: "f3-c-right", to: "f3-c-right-vertical-bottom", distance: 9, direction: "Walk past the corridor junction" },
+  { from: "f3-c-right", to: "f3-c-right-vertical-boys", distance: 8, direction: "Go up the right corridor stack" },
+  { from: "f3-c-right-vertical-boys", to: "f3-c-right-vertical-girls", distance: 8, direction: "Continue up past Boys Toilet" },
+  { from: "f3-c-right-vertical-girls", to: "f3-c-right-vertical-lab", distance: 10, direction: "Continue up past Girls Toilet" },
+  { from: "f3-c-right-vertical-lab", to: "f3-c-right-vertical-325", distance: 11, direction: "Continue up past the Lab" },
+  { from: "f3-c-right", to: "f3-c-right-vertical-bottom", distance: 11, direction: "Go down the right corridor stack" },
 
-  // Connect rooms
-  { from: "f3-c-left-vertical-top", to: "f3-boys-toilet-301", distance: 10, direction: "Enter Boys Toilet 301" },
-  { from: "f3-c-left-vertical-303", to: "f3-director-mba-303", distance: 6, direction: "Enter Director MBA 303" },
-  { from: "f3-c-left-vertical-304", to: "f3-cr-304", distance: 6, direction: "Enter CR 304" },
-  { from: "f3-c-left-vertical-305", to: "f3-cr-305-hall", distance: 6, direction: "Enter CR - 305 Hall" },
-  { from: "f3-c-left-vertical-306", to: "f3-cr-306", distance: 6, direction: "Enter CR - 306" },
-  { from: "f3-c-left-vertical-307", to: "f3-mba-dept-307", distance: 7, direction: "Enter MBA department CR - 307" },
-  { from: "f3-c-left-vertical-308", to: "f3-cr-308", distance: 7, direction: "Enter C.R - 308" },
-  { from: "f3-c-left-vertical-307", to: "f3-stairs-left", distance: 12, direction: "Walk to the MBA Staircase" },
+  // Connect rooms to corridor waypoints
+  // Left Wing stack
+  { from: "f3-c-left-vertical-washroom", to: "f3-boys-toilet-301", distance: 3, direction: "Enter Boys Toilet 301" },
+  { from: "f3-c-left-vertical-303", to: "f3-director-mba-303", distance: 3, direction: "Enter Director MBA 303" },
+  { from: "f3-c-left-vertical-304", to: "f3-cr-304", distance: 3, direction: "Enter CR 304" },
+  { from: "f3-c-left-vertical-305", to: "f3-cr-305-hall", distance: 3, direction: "Enter CR - 305 Hall" },
+  { from: "f3-c-left-vertical-306", to: "f3-cr-306", distance: 3, direction: "Enter CR - 306" },
+  { from: "f3-c-left-vertical-307", to: "f3-mba-dept-307", distance: 3, direction: "Enter MBA department CR - 307 class room" },
+  { from: "f3-c-left-vertical-308", to: "f3-cr-308", distance: 3, direction: "Enter C.R - 308" },
 
-  { from: "f3-c-309", to: "f3-cr-309", distance: 8, direction: "Enter CR - 309" },
-  { from: "f3-c-310", to: "f3-cr-310", distance: 8, direction: "Enter CR - 310" },
-  { from: "f3-c-311", to: "f3-cr-311", distance: 8, direction: "Enter C.R - 311" },
-  { from: "f3-c-stairs1", to: "f3-stairs", distance: 8, direction: "Go to the Staircase" },
-  { from: "f3-c-stairs1", to: "f3-lift", distance: 8, direction: "Step into the Lift" },
-  { from: "f3-c-ece314", to: "f3-ece-314", distance: 8, direction: "Enter ECE 314" },
-  { from: "f3-c-315-302", to: "f3-room-315", distance: 8, direction: "Enter Room 315" },
-  { from: "f3-c-315-302", to: "f3-room-302", distance: 8, direction: "Enter Room 302" },
-  { from: "f3-c-301", to: "f3-room-301", distance: 8, direction: "Enter Room 301" },
-  { from: "f3-c-stairs2", to: "f3-stairs-right", distance: 8, direction: "Go to the Staircase" },
-  { from: "f3-c-319", to: "f3-cr-319", distance: 8, direction: "Enter CR - 319" },
-  { from: "f3-c-320", to: "f3-cr-320", distance: 8, direction: "Enter CR - 320" },
+  // Top Center rooms
+  { from: "f3-c-309", to: "f3-cr-309", distance: 8, direction: "Enter CR - 309 class room" },
+  { from: "f3-c-310", to: "f3-cr-310", distance: 8, direction: "Enter CR - 310 class room" },
+  { from: "f3-c-311", to: "f3-cr-311", distance: 8, direction: "Enter C.R - 311 class room" },
+  { from: "f3-c-stairs-left", to: "f3-stairs", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f3-c-lift-left", to: "f3-lift", distance: 8, direction: "Step into the Lift" },
+  { from: "f3-c-ece314", to: "f3-ece-314", distance: 8, direction: "Enter ECE 314 class room" },
+  { from: "f3-c-315", to: "f3-room-315", distance: 8, direction: "Enter 315 class room" },
+  { from: "f3-c-302", to: "f3-room-302", distance: 8, direction: "Enter 302 class room" },
+  { from: "f3-c-301", to: "f3-room-301", distance: 8, direction: "Enter 301 class room" },
+  { from: "f3-c-lift-right", to: "f3-lift-2", distance: 8, direction: "Step into the Lift" },
+  { from: "f3-c-stairs-right", to: "f3-stairs-2", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f3-c-319", to: "f3-cr-319", distance: 8, direction: "Enter CR - 319 class room" },
+  { from: "f3-c-320", to: "f3-cr-320", distance: 8, direction: "Enter CR - 320 class room" },
 
-  { from: "f3-c-311", to: "f3-tutorial", distance: 6, direction: "Enter Tutorial" },
-  { from: "f3-c-stairs1", to: "f3-staff-room", distance: 6, direction: "Enter Staff Room" },
-  { from: "f3-c-315-302", to: "f3-dept-ece-hod-318", distance: 6, direction: "Enter Dept ECE HOD-318" },
+  // Bottom Center rooms
+  { from: "f3-c-tutorial", to: "f3-tutorial", distance: 10, direction: "Enter Tutorial" },
+  { from: "f3-c-staff-room", to: "f3-staff-room", distance: 10, direction: "Enter Staff Room" },
+  { from: "f3-c-ece-hod", to: "f3-dept-ece-hod-318", distance: 10, direction: "Enter Dept ECE HOD-318" },
 
-  { from: "f3-c-right-vertical-325", to: "f3-cr-325", distance: 3, direction: "Enter CR - 325" },
+  // Right Wing stack
+  { from: "f3-c-right-vertical-325", to: "f3-cr-325", distance: 3, direction: "Enter CR - 325 class room" },
   { from: "f3-c-right-vertical-lab", to: "f3-cred-326-lab", distance: 3, direction: "Enter CRED-326 LAB" },
-  { from: "f3-c-right-vertical-toilet", to: "f3-girls-toilet-302-3", distance: 3, direction: "Enter Girls Toilet" },
-  { from: "f3-c-right-vertical-toilet", to: "f3-boys-toilet-302-2", distance: 3, direction: "Enter Boys Toilet" },
-  { from: "f3-c-right-vertical-bottom", to: "f3-cr-321", distance: 3, direction: "Enter CR - 321" },
+  { from: "f3-c-right-vertical-girls", to: "f3-girls-toilet-302-3", distance: 3, direction: "Enter Girls Toilet 302-3" },
+  { from: "f3-c-right-vertical-boys", to: "f3-boys-toilet-302-2", distance: 3, direction: "Enter Boys Toilet 302-2" },
+  { from: "f3-c-right-vertical-bottom", to: "f3-cr-321", distance: 3, direction: "Enter CR - 321 class room" },
+
+  // Secondary Lift/Stairs Inter-floor connections
+  { from: "f3-lift-2", to: "f2-lift-2", distance: 5, direction: "Take the Lift down from 3rd Floor to 2nd Floor" },
+  { from: "f2-lift-2", to: "f3-lift-2", distance: 5, direction: "Take the Lift up from 2nd Floor to 3rd Floor" },
+  { from: "f3-stairs-2", to: "f2-stairs-2", distance: 7, direction: "Take the Stairs down from 3rd Floor to 2nd Floor" },
+  { from: "f2-stairs-2", to: "f3-stairs-2", distance: 7, direction: "Take the Stairs up from 2nd Floor to 3rd Floor" },
 ];
 
-export const locations: Location[] = [...groundLocations, ...secondLocations, ...thirdLocations];
-export const connections: Connection[] = [...groundConnections, ...secondConnections, ...thirdConnections];
+// Dedicated First Floor Locations (calibrated to the new landscape image)
+const firstLocations: Location[] = [
+  { id: "f1-boys-toilet-101", name: "1st Floor - Boys toilet - 101", type: "facility", x: 7, y: 12, floor: 1 },
+  { id: "f1-lh-102", name: "1st Floor - LH-102", type: "classroom", x: 7, y: 25, floor: 1 },
+  { id: "f1-lh-103", name: "1st Floor - LH103", type: "classroom", x: 7, y: 37, floor: 1 },
+  { id: "f1-lh-104", name: "1st Floor - LH-104", type: "classroom", x: 7, y: 49, floor: 1 },
+  { id: "f1-lh-105", name: "1st Floor - LH-105", type: "classroom", x: 7, y: 80, floor: 1 },
 
-// Dynamically generate multi-floor map structure for upper floors (1)
-const upperFloors = [1];
-for (const floor of upperFloors) {
-  const prefix = `f${floor}-`;
+  // Center top rooms (above main corridor)
+  { id: "f1-lh-106", name: "1st Floor - LH-106", type: "classroom", x: 18, y: 49, floor: 1 },
+  { id: "f1-lh-107", name: "1st Floor - LH-107", type: "classroom", x: 24, y: 49, floor: 1 },
+  { id: "f1-lh-108", name: "1st Floor - LH-108", type: "classroom", x: 30, y: 49, floor: 1 },
+  { id: "f1-stairs", name: "1st Floor - Staircase (Left)", type: "stairs", x: 38, y: 49, floor: 1 },
+  { id: "f1-lift", name: "1st Floor - Lift (Left)", type: "lift", x: 41, y: 49, floor: 1 },
+  { id: "f1-board-room", name: "1st Floor - Board room", type: "classroom", x: 45, y: 49, floor: 1 },
+  { id: "f1-room-middle", name: "1st Floor - Room", type: "classroom", x: 51, y: 49, floor: 1 },
+  { id: "f1-principal-chamber", name: "1st Floor - Principal chamber", type: "classroom", x: 56, y: 49, floor: 1 },
+  { id: "f1-lift-2", name: "1st Floor - Lift (Right)", type: "lift", x: 60, y: 49, floor: 1 },
+  { id: "f1-stairs-2", name: "1st Floor - Staircase (Right)", type: "stairs", x: 64, y: 49, floor: 1 },
+  { id: "f1-lh-114", name: "1st Floor - LH-114", type: "classroom", x: 70, y: 49, floor: 1 },
+  { id: "f1-placement-training", name: "1st Floor - Placement and Training Cell", type: "classroom", x: 76, y: 49, floor: 1 },
+  { id: "f1-lh-110", name: "1st Floor - LH-110", type: "classroom", x: 82, y: 49, floor: 1 },
 
-  // Replicate locations for this floor
-  for (const base of baseLocations) {
-    const customName = ROOM_NAMES_BY_FLOOR[floor]?.[base.id] || base.name;
-    locations.push({
-      ...base,
-      id: `${prefix}${base.id}`,
-      name: `${FLOOR_NAMES[floor]} - ${customName}`,
-      floor,
-    });
-  }
+  // Center bottom rooms
+  { id: "f1-accounts-109", name: "1st Floor - Accounts ROOM - 109", type: "classroom", x: 31, y: 74, floor: 1 },
+  { id: "f1-admission-113", name: "1st Floor - Admission section - 113", type: "classroom", x: 60, y: 74, floor: 1 },
 
-  // Replicate connections within this floor
-  for (const baseConn of baseConnections) {
-    // Generate intelligent custom direction text
-    let dynamicDirection = baseConn.direction;
-    if (
-      dynamicDirection === "Enter the Room" || 
-      dynamicDirection === "Enter Toilet" || 
-      dynamicDirection === "Enter the Section" || 
-      dynamicDirection === "Enter the Lab" || 
-      dynamicDirection === "Enter the Lounge / Computer Lab"
-    ) {
-      const targetRoomName = ROOM_NAMES_BY_FLOOR[floor]?.[baseConn.to];
-      if (targetRoomName) {
-        dynamicDirection = `Enter ${targetRoomName}`;
-      }
-    } else if (
-      dynamicDirection === "Enter the Room on your right" || 
-      dynamicDirection === "Enter the Lab on your right" || 
-      dynamicDirection === "Enter the Room/Lab on your right"
-    ) {
-      const targetRoomName = ROOM_NAMES_BY_FLOOR[floor]?.[baseConn.to];
-      if (targetRoomName) {
-        dynamicDirection = `Enter ${targetRoomName} on your right`;
-      }
-    } else if (dynamicDirection === "Step through the Entrance") {
-      const targetRoomName = ROOM_NAMES_BY_FLOOR[floor]?.[baseConn.to];
-      if (targetRoomName) {
-        dynamicDirection = `Step through the ${targetRoomName}`;
-      }
-    }
+  // Right Wing (vertical stack)
+  { id: "f1-seminar-120", name: "1st Floor - Seminar hall - 120", type: "classroom", x: 93, y: 15, floor: 1 },
+  { id: "f1-girls-toilet-119", name: "1st Floor - Girls toilet - 119", type: "facility", x: 93, y: 33, floor: 1 },
+  { id: "f1-boys-toilet-118", name: "1st Floor - Boys toilet - 118", type: "facility", x: 93, y: 49, floor: 1 },
+  { id: "f1-hod-staff-room", name: "1st Floor - HOD and STAFF ROOM", type: "facility", x: 93, y: 80, floor: 1 },
 
-    connections.push({
-      from: `${prefix}${baseConn.from}`,
-      to: `${prefix}${baseConn.to}`,
-      distance: baseConn.distance,
-      direction: dynamicDirection,
-    });
-  }
-}
+  // Corridor Waypoints - Main Horizontal Corridor at y = 62%
+  { id: "f1-c-left", name: "1st Floor - Corridor Left End", type: "corridor", x: 12, y: 62, floor: 1 },
+  { id: "f1-c-lh106", name: "1st Floor - Corridor near LH-106", type: "corridor", x: 18, y: 62, floor: 1 },
+  { id: "f1-c-lh107", name: "1st Floor - Corridor near LH-107", type: "corridor", x: 24, y: 62, floor: 1 },
+  { id: "f1-c-lh108", name: "1st Floor - Corridor near LH-108", type: "corridor", x: 30, y: 62, floor: 1 },
+  { id: "f1-c-stairs-left", name: "1st Floor - Corridor near Left Stairs", type: "corridor", x: 38, y: 62, floor: 1 },
+  { id: "f1-c-lift-left", name: "1st Floor - Corridor near Left Lift", type: "corridor", x: 41, y: 62, floor: 1 },
+  { id: "f1-c-board-room", name: "1st Floor - Corridor near Board room", type: "corridor", x: 45, y: 62, floor: 1 },
+  { id: "f1-c-room-middle", name: "1st Floor - Corridor near Room", type: "corridor", x: 51, y: 62, floor: 1 },
+  { id: "f1-c-principal-chamber", name: "1st Floor - Corridor near Principal chamber", type: "corridor", x: 56, y: 62, floor: 1 },
+  { id: "f1-c-lift-right", name: "1st Floor - Corridor near Right Lift", type: "corridor", x: 60, y: 62, floor: 1 },
+  { id: "f1-c-stairs-right", name: "1st Floor - Corridor near Right Stairs", type: "corridor", x: 64, y: 62, floor: 1 },
+  { id: "f1-c-lh114", name: "1st Floor - Corridor near LH-114", type: "corridor", x: 70, y: 62, floor: 1 },
+  { id: "f1-c-placement-training", name: "1st Floor - Corridor near Placement and Training Cell", type: "corridor", x: 76, y: 62, floor: 1 },
+  { id: "f1-c-lh110", name: "1st Floor - Corridor near LH-110", type: "corridor", x: 82, y: 62, floor: 1 },
+  { id: "f1-c-right", name: "1st Floor - Corridor Right End", type: "corridor", x: 88, y: 62, floor: 1 },
+
+  // Corridor Waypoints - Left Wing Vertical Corridor Stack (runs along x = 12%)
+  { id: "f1-c-left-vertical-washroom", name: "1st Floor - Left Corridor near Boys toilet", type: "corridor", x: 12, y: 12, floor: 1 },
+  { id: "f1-c-left-vertical-lh102", name: "1st Floor - Left Corridor near LH-102", type: "corridor", x: 12, y: 25, floor: 1 },
+  { id: "f1-c-left-vertical-lh103", name: "1st Floor - Left Corridor near LH103", type: "corridor", x: 12, y: 37, floor: 1 },
+  { id: "f1-c-left-vertical-lh104", name: "1st Floor - Left Corridor near LH-104", type: "corridor", x: 12, y: 49, floor: 1 },
+  { id: "f1-c-left-vertical-bottom", name: "1st Floor - Left Corridor near LH-105", type: "corridor", x: 12, y: 80, floor: 1 },
+
+  // Corridor Waypoints - Right Wing Vertical Corridor Stack (runs along x = 88%)
+  { id: "f1-c-right-vertical-seminar", name: "1st Floor - Right Corridor near Seminar hall", type: "corridor", x: 88, y: 15, floor: 1 },
+  { id: "f1-c-right-vertical-girls", name: "1st Floor - Right Corridor near Girls toilet", type: "corridor", x: 88, y: 33, floor: 1 },
+  { id: "f1-c-right-vertical-boys", name: "1st Floor - Right Corridor near Boys toilet", type: "corridor", x: 88, y: 49, floor: 1 },
+  { id: "f1-c-right-vertical-bottom", name: "1st Floor - Right Corridor near HOD and STAFF ROOM", type: "corridor", x: 88, y: 80, floor: 1 },
+];
+
+const firstConnections: Connection[] = [
+  // Main Horizontal Corridor segments (left to right)
+  { from: "f1-c-left", to: "f1-c-lh106", distance: 4, direction: "Walk straight along the corridor" },
+  { from: "f1-c-lh106", to: "f1-c-lh107", distance: 4, direction: "Continue straight past LH-106" },
+  { from: "f1-c-lh107", to: "f1-c-lh108", distance: 4, direction: "Continue past LH-107" },
+  { from: "f1-c-lh108", to: "f1-c-stairs-left", distance: 5, direction: "Continue past LH-108" },
+  { from: "f1-c-stairs-left", to: "f1-c-lift-left", distance: 2, direction: "Walk past the Staircase" },
+  { from: "f1-c-lift-left", to: "f1-c-board-room", distance: 3, direction: "Continue past the Lift" },
+  { from: "f1-c-board-room", to: "f1-c-room-middle", distance: 4, direction: "Continue past Board room" },
+  { from: "f1-c-room-middle", to: "f1-c-principal-chamber", distance: 3, direction: "Continue past Room" },
+  { from: "f1-c-principal-chamber", to: "f1-c-lift-right", distance: 3, direction: "Continue past Principal chamber" },
+  { from: "f1-c-lift-right", to: "f1-c-stairs-right", distance: 2, direction: "Continue past the Lift" },
+  { from: "f1-c-stairs-right", to: "f1-c-lh114", distance: 4, direction: "Walk past the Staircase" },
+  { from: "f1-c-lh114", to: "f1-c-placement-training", distance: 4, direction: "Continue past LH-114" },
+  { from: "f1-c-placement-training", to: "f1-c-lh110", distance: 4, direction: "Continue past Placement and Training Cell" },
+  { from: "f1-c-lh110", to: "f1-c-right", distance: 4, direction: "Walk to the end of the corridor" },
+
+  // Left Wing vertical corridor segments
+  { from: "f1-c-left", to: "f1-c-left-vertical-lh104", distance: 8, direction: "Go up the left corridor stack" },
+  { from: "f1-c-left-vertical-lh104", to: "f1-c-left-vertical-lh103", distance: 8, direction: "Continue up the corridor" },
+  { from: "f1-c-left-vertical-lh103", to: "f1-c-left-vertical-lh102", distance: 8, direction: "Continue up past LH-103" },
+  { from: "f1-c-left-vertical-lh102", to: "f1-c-left-vertical-washroom", distance: 8, direction: "Continue up past LH-102" },
+  { from: "f1-c-left", to: "f1-c-left-vertical-bottom", distance: 11, direction: "Go down the left corridor stack" },
+
+  // Right Wing vertical corridor segments
+  { from: "f1-c-right", to: "f1-c-right-vertical-boys", distance: 8, direction: "Go up the right corridor stack" },
+  { from: "f1-c-right-vertical-boys", to: "f1-c-right-vertical-girls", distance: 10, direction: "Continue up past Boys toilet" },
+  { from: "f1-c-right-vertical-girls", to: "f1-c-right-vertical-seminar", distance: 11, direction: "Continue up past Girls toilet" },
+  { from: "f1-c-right", to: "f1-c-right-vertical-bottom", distance: 11, direction: "Go down the right corridor stack" },
+
+  // Connect rooms to corridor waypoints
+  // Left Wing stack
+  { from: "f1-c-left-vertical-washroom", to: "f1-boys-toilet-101", distance: 3, direction: "Enter Boys toilet - 101" },
+  { from: "f1-c-left-vertical-lh102", to: "f1-lh-102", distance: 3, direction: "Enter LH-102" },
+  { from: "f1-c-left-vertical-lh103", to: "f1-lh-103", distance: 3, direction: "Enter LH103" },
+  { from: "f1-c-left-vertical-lh104", to: "f1-lh-104", distance: 3, direction: "Enter LH-104" },
+  { from: "f1-c-left-vertical-bottom", to: "f1-lh-105", distance: 3, direction: "Enter LH-105" },
+
+  // Top Center rooms
+  { from: "f1-c-lh106", to: "f1-lh-106", distance: 8, direction: "Enter LH-106" },
+  { from: "f1-c-lh107", to: "f1-lh-107", distance: 8, direction: "Enter LH-107" },
+  { from: "f1-c-lh108", to: "f1-lh-108", distance: 8, direction: "Enter LH-108" },
+  { from: "f1-c-stairs-left", to: "f1-stairs", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f1-c-lift-left", to: "f1-lift", distance: 8, direction: "Step into the Lift" },
+  { from: "f1-c-board-room", to: "f1-board-room", distance: 8, direction: "Enter Board room" },
+  { from: "f1-c-room-middle", to: "f1-room-middle", distance: 8, direction: "Enter Room" },
+  { from: "f1-c-principal-chamber", to: "f1-principal-chamber", distance: 8, direction: "Enter Principal chamber" },
+  { from: "f1-c-lift-right", to: "f1-lift-2", distance: 8, direction: "Step into the Lift" },
+  { from: "f1-c-stairs-right", to: "f1-stairs-2", distance: 8, direction: "Walk to the Staircase" },
+  { from: "f1-c-lh114", to: "f1-lh-114", distance: 8, direction: "Enter LH-114" },
+  { from: "f1-c-placement-training", to: "f1-placement-training", distance: 8, direction: "Enter Placement and Training Cell" },
+  { from: "f1-c-lh110", to: "f1-lh-110", distance: 8, direction: "Enter LH-110" },
+
+  // Bottom Center rooms
+  { from: "f1-c-lh108", to: "f1-accounts-109", distance: 10, direction: "Enter Accounts ROOM - 109" },
+  { from: "f1-c-lift-right", to: "f1-admission-113", distance: 10, direction: "Enter Admission section - 113" },
+
+  // Right Wing stack
+  { from: "f1-c-right-vertical-seminar", to: "f1-seminar-120", distance: 3, direction: "Enter Seminar hall - 120" },
+  { from: "f1-c-right-vertical-girls", to: "f1-girls-toilet-119", distance: 3, direction: "Enter Girls toilet - 119" },
+  { from: "f1-c-right-vertical-boys", to: "f1-boys-toilet-118", distance: 3, direction: "Enter Boys toilet - 118" },
+  { from: "f1-c-right-vertical-bottom", to: "f1-hod-staff-room", distance: 3, direction: "Enter HOD and STAFF ROOM" },
+
+  // Secondary Lift/Stairs Inter-floor connections
+  { from: "f1-lift-2", to: "f0-lift-2", distance: 5, direction: "Take the Lift down from 1st Floor to Ground Floor" },
+  { from: "f0-lift-2", to: "f1-lift-2", distance: 5, direction: "Take the Lift up from Ground Floor to 1st Floor" },
+  { from: "f1-lift-2", to: "f2-lift-2", distance: 5, direction: "Take the Lift up from 1st Floor to 2nd Floor" },
+  { from: "f2-lift-2", to: "f1-lift-2", distance: 5, direction: "Take the Lift down from 2nd Floor to 1st Floor" },
+  { from: "f1-stairs-2", to: "f0-stairs-2", distance: 7, direction: "Take the Stairs down from 1st Floor to Ground Floor" },
+  { from: "f0-stairs-2", to: "f1-stairs-2", distance: 7, direction: "Take the Stairs up from Ground Floor to 1st Floor" },
+];
+
+export const locations: Location[] = [...groundLocations, ...firstLocations, ...secondLocations, ...thirdLocations];
+export const connections: Connection[] = [...groundConnections, ...firstConnections, ...secondConnections, ...thirdConnections];
 
 // === INTER-FLOOR CONNECTIONS (Lift and Stairs) ===
 for (let f = 0; f < 3; f++) {
